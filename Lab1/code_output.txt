@@ -8,14 +8,556 @@ public class Lab1 {
 
   public static void main(java.lang.String[]);
     Code:
-       0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
-       3: ldc           #13                 // String Group: 545a
-       5: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
-       8: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
-      11: ldc           #21                 // String Student: Keshishyan Denis Rubenovich
-      13: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
-      16: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
-      19: ldc           #23                 // String Variant: 5
-      21: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
-      24: return
+       0: bipush        7
+       2: anewarray     #2                  // class "[Ljava/lang/String;"
+       5: dup
+       6: iconst_0
+       7: bipush        17
+       9: anewarray     #3                  // class java/lang/String
+      12: dup
+      13: iconst_0
+      14: ldc           #4                  // String *
+      16: aastore
+      17: dup
+      18: iconst_1
+      19: ldc           #5                  // String
+      21: aastore
+      22: dup
+      23: iconst_2
+      24: ldc           #5                  // String
+      26: aastore
+      27: dup
+      28: iconst_3
+      29: ldc           #4                  // String *
+      31: aastore
+      32: dup
+      33: iconst_4
+      34: ldc           #5                  // String
+      36: aastore
+      37: dup
+      38: iconst_5
+      39: ldc           #5                  // String
+      41: aastore
+      42: dup
+      43: bipush        6
+      45: ldc           #4                  // String *
+      47: aastore
+      48: dup
+      49: bipush        7
+      51: ldc           #4                  // String *
+      53: aastore
+      54: dup
+      55: bipush        8
+      57: ldc           #4                  // String *
+      59: aastore
+      60: dup
+      61: bipush        9
+      63: ldc           #5                  // String
+      65: aastore
+      66: dup
+      67: bipush        10
+      69: ldc           #5                  // String
+      71: aastore
+      72: dup
+      73: bipush        11
+      75: ldc           #5                  // String
+      77: aastore
+      78: dup
+      79: bipush        12
+      81: ldc           #4                  // String *
+      83: aastore
+      84: dup
+      85: bipush        13
+      87: ldc           #4                  // String *
+      89: aastore
+      90: dup
+      91: bipush        14
+      93: ldc           #4                  // String *
+      95: aastore
+      96: dup
+      97: bipush        15
+      99: ldc           #5                  // String
+     101: aastore
+     102: dup
+     103: bipush        16
+     105: ldc           #5                  // String
+     107: aastore
+     108: aastore
+     109: dup
+     110: iconst_1
+     111: bipush        17
+     113: anewarray     #3                  // class java/lang/String
+     116: dup
+     117: iconst_0
+     118: ldc           #4                  // String *
+     120: aastore
+     121: dup
+     122: iconst_1
+     123: ldc           #5                  // String
+     125: aastore
+     126: dup
+     127: iconst_2
+     128: ldc           #5                  // String
+     130: aastore
+     131: dup
+     132: iconst_3
+     133: ldc           #4                  // String *
+     135: aastore
+     136: dup
+     137: iconst_4
+     138: ldc           #5                  // String
+     140: aastore
+     141: dup
+     142: iconst_5
+     143: ldc           #5                  // String
+     145: aastore
+     146: dup
+     147: bipush        6
+     149: ldc           #4                  // String *
+     151: aastore
+     152: dup
+     153: bipush        7
+     155: ldc           #5                  // String
+     157: aastore
+     158: dup
+     159: bipush        8
+     161: ldc           #5                  // String
+     163: aastore
+     164: dup
+     165: bipush        9
+     167: ldc           #4                  // String *
+     169: aastore
+     170: dup
+     171: bipush        10
+     173: ldc           #5                  // String
+     175: aastore
+     176: dup
+     177: bipush        11
+     179: ldc           #5                  // String
+     181: aastore
+     182: dup
+     183: bipush        12
+     185: ldc           #4                  // String *
+     187: aastore
+     188: dup
+     189: bipush        13
+     191: ldc           #5                  // String
+     193: aastore
+     194: dup
+     195: bipush        14
+     197: ldc           #5                  // String
+     199: aastore
+     200: dup
+     201: bipush        15
+     203: ldc           #4                  // String *
+     205: aastore
+     206: dup
+     207: bipush        16
+     209: ldc           #5                  // String
+     211: aastore
+     212: aastore
+     213: dup
+     214: iconst_2
+     215: bipush        17
+     217: anewarray     #3                  // class java/lang/String
+     220: dup
+     221: iconst_0
+     222: ldc           #4                  // String *
+     224: aastore
+     225: dup
+     226: iconst_1
+     227: ldc           #5                  // String
+     229: aastore
+     230: dup
+     231: iconst_2
+     232: ldc           #4                  // String *
+     234: aastore
+     235: dup
+     236: iconst_3
+     237: ldc           #5                  // String
+     239: aastore
+     240: dup
+     241: iconst_4
+     242: ldc           #5                  // String
+     244: aastore
+     245: dup
+     246: iconst_5
+     247: ldc           #5                  // String
+     249: aastore
+     250: dup
+     251: bipush        6
+     253: ldc           #4                  // String *
+     255: aastore
+     256: dup
+     257: bipush        7
+     259: ldc           #5                  // String
+     261: aastore
+     262: dup
+     263: bipush        8
+     265: ldc           #5                  // String
+     267: aastore
+     268: dup
+     269: bipush        9
+     271: ldc           #4                  // String *
+     273: aastore
+     274: dup
+     275: bipush        10
+     277: ldc           #5                  // String
+     279: aastore
+     280: dup
+     281: bipush        11
+     283: ldc           #5                  // String
+     285: aastore
+     286: dup
+     287: bipush        12
+     289: ldc           #4                  // String *
+     291: aastore
+     292: dup
+     293: bipush        13
+     295: ldc           #5                  // String
+     297: aastore
+     298: dup
+     299: bipush        14
+     301: ldc           #5                  // String
+     303: aastore
+     304: dup
+     305: bipush        15
+     307: ldc           #4                  // String *
+     309: aastore
+     310: dup
+     311: bipush        16
+     313: ldc           #5                  // String
+     315: aastore
+     316: aastore
+     317: dup
+     318: iconst_3
+     319: bipush        17
+     321: anewarray     #3                  // class java/lang/String
+     324: dup
+     325: iconst_0
+     326: ldc           #4                  // String *
+     328: aastore
+     329: dup
+     330: iconst_1
+     331: ldc           #4                  // String *
+     333: aastore
+     334: dup
+     335: iconst_2
+     336: ldc           #5                  // String
+     338: aastore
+     339: dup
+     340: iconst_3
+     341: ldc           #5                  // String
+     343: aastore
+     344: dup
+     345: iconst_4
+     346: ldc           #5                  // String
+     348: aastore
+     349: dup
+     350: iconst_5
+     351: ldc           #5                  // String
+     353: aastore
+     354: dup
+     355: bipush        6
+     357: ldc           #4                  // String *
+     359: aastore
+     360: dup
+     361: bipush        7
+     363: ldc           #5                  // String
+     365: aastore
+     366: dup
+     367: bipush        8
+     369: ldc           #5                  // String
+     371: aastore
+     372: dup
+     373: bipush        9
+     375: ldc           #4                  // String *
+     377: aastore
+     378: dup
+     379: bipush        10
+     381: ldc           #5                  // String
+     383: aastore
+     384: dup
+     385: bipush        11
+     387: ldc           #5                  // String
+     389: aastore
+     390: dup
+     391: bipush        12
+     393: ldc           #4                  // String *
+     395: aastore
+     396: dup
+     397: bipush        13
+     399: ldc           #4                  // String *
+     401: aastore
+     402: dup
+     403: bipush        14
+     405: ldc           #4                  // String *
+     407: aastore
+     408: dup
+     409: bipush        15
+     411: ldc           #5                  // String
+     413: aastore
+     414: dup
+     415: bipush        16
+     417: ldc           #5                  // String
+     419: aastore
+     420: aastore
+     421: dup
+     422: iconst_4
+     423: bipush        17
+     425: anewarray     #3                  // class java/lang/String
+     428: dup
+     429: iconst_0
+     430: ldc           #4                  // String *
+     432: aastore
+     433: dup
+     434: iconst_1
+     435: ldc           #5                  // String
+     437: aastore
+     438: dup
+     439: iconst_2
+     440: ldc           #4                  // String *
+     442: aastore
+     443: dup
+     444: iconst_3
+     445: ldc           #5                  // String
+     447: aastore
+     448: dup
+     449: iconst_4
+     450: ldc           #5                  // String
+     452: aastore
+     453: dup
+     454: iconst_5
+     455: ldc           #5                  // String
+     457: aastore
+     458: dup
+     459: bipush        6
+     461: ldc           #4                  // String *
+     463: aastore
+     464: dup
+     465: bipush        7
+     467: ldc           #5                  // String
+     469: aastore
+     470: dup
+     471: bipush        8
+     473: ldc           #5                  // String
+     475: aastore
+     476: dup
+     477: bipush        9
+     479: ldc           #4                  // String *
+     481: aastore
+     482: dup
+     483: bipush        10
+     485: ldc           #5                  // String
+     487: aastore
+     488: dup
+     489: bipush        11
+     491: ldc           #5                  // String
+     493: aastore
+     494: dup
+     495: bipush        12
+     497: ldc           #4                  // String *
+     499: aastore
+     500: dup
+     501: bipush        13
+     503: ldc           #4                  // String *
+     505: aastore
+     506: dup
+     507: bipush        14
+     509: ldc           #5                  // String
+     511: aastore
+     512: dup
+     513: bipush        15
+     515: ldc           #5                  // String
+     517: aastore
+     518: dup
+     519: bipush        16
+     521: ldc           #5                  // String
+     523: aastore
+     524: aastore
+     525: dup
+     526: iconst_5
+     527: bipush        17
+     529: anewarray     #3                  // class java/lang/String
+     532: dup
+     533: iconst_0
+     534: ldc           #4                  // String *
+     536: aastore
+     537: dup
+     538: iconst_1
+     539: ldc           #5                  // String
+     541: aastore
+     542: dup
+     543: iconst_2
+     544: ldc           #5                  // String
+     546: aastore
+     547: dup
+     548: iconst_3
+     549: ldc           #4                  // String *
+     551: aastore
+     552: dup
+     553: iconst_4
+     554: ldc           #5                  // String
+     556: aastore
+     557: dup
+     558: iconst_5
+     559: ldc           #5                  // String
+     561: aastore
+     562: dup
+     563: bipush        6
+     565: ldc           #4                  // String *
+     567: aastore
+     568: dup
+     569: bipush        7
+     571: ldc           #5                  // String
+     573: aastore
+     574: dup
+     575: bipush        8
+     577: ldc           #5                  // String
+     579: aastore
+     580: dup
+     581: bipush        9
+     583: ldc           #4                  // String *
+     585: aastore
+     586: dup
+     587: bipush        10
+     589: ldc           #5                  // String
+     591: aastore
+     592: dup
+     593: bipush        11
+     595: ldc           #5                  // String
+     597: aastore
+     598: dup
+     599: bipush        12
+     601: ldc           #4                  // String *
+     603: aastore
+     604: dup
+     605: bipush        13
+     607: ldc           #5                  // String
+     609: aastore
+     610: dup
+     611: bipush        14
+     613: ldc           #4                  // String *
+     615: aastore
+     616: dup
+     617: bipush        15
+     619: ldc           #5                  // String
+     621: aastore
+     622: dup
+     623: bipush        16
+     625: ldc           #5                  // String
+     627: aastore
+     628: aastore
+     629: dup
+     630: bipush        6
+     632: bipush        17
+     634: anewarray     #3                  // class java/lang/String
+     637: dup
+     638: iconst_0
+     639: ldc           #4                  // String *
+     641: aastore
+     642: dup
+     643: iconst_1
+     644: ldc           #5                  // String
+     646: aastore
+     647: dup
+     648: iconst_2
+     649: ldc           #5                  // String
+     651: aastore
+     652: dup
+     653: iconst_3
+     654: ldc           #4                  // String *
+     656: aastore
+     657: dup
+     658: iconst_4
+     659: ldc           #5                  // String
+     661: aastore
+     662: dup
+     663: iconst_5
+     664: ldc           #5                  // String
+     666: aastore
+     667: dup
+     668: bipush        6
+     670: ldc           #4                  // String *
+     672: aastore
+     673: dup
+     674: bipush        7
+     676: ldc           #4                  // String *
+     678: aastore
+     679: dup
+     680: bipush        8
+     682: ldc           #4                  // String *
+     684: aastore
+     685: dup
+     686: bipush        9
+     688: ldc           #5                  // String
+     690: aastore
+     691: dup
+     692: bipush        10
+     694: ldc           #5                  // String
+     696: aastore
+     697: dup
+     698: bipush        11
+     700: ldc           #5                  // String
+     702: aastore
+     703: dup
+     704: bipush        12
+     706: ldc           #4                  // String *
+     708: aastore
+     709: dup
+     710: bipush        13
+     712: ldc           #5                  // String
+     714: aastore
+     715: dup
+     716: bipush        14
+     718: ldc           #5                  // String
+     720: aastore
+     721: dup
+     722: bipush        15
+     724: ldc           #4                  // String *
+     726: aastore
+     727: dup
+     728: bipush        16
+     730: ldc           #5                  // String
+     732: aastore
+     733: aastore
+     734: astore_1
+     735: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     738: ldc           #7                  // String Group: 545a
+     740: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     743: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     746: ldc           #9                  // String Student: Keshishyan Denis Rubenovich
+     748: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     751: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     754: ldc           #10                 // String Variant: 5
+     756: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     759: iconst_0
+     760: istore_2
+     761: iload_2
+     762: aload_1
+     763: arraylength
+     764: if_icmpge     808
+     767: iconst_0
+     768: istore_3
+     769: iload_3
+     770: aload_1
+     771: iconst_0
+     772: aaload
+     773: arraylength
+     774: if_icmpge     794
+     777: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     780: aload_1
+     781: iload_2
+     782: aaload
+     783: iload_3
+     784: aaload
+     785: invokevirtual #11                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+     788: iinc          3, 1
+     791: goto          769
+     794: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     797: ldc           #12                 // String
+     799: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     802: iinc          2, 1
+     805: goto          761
+     808: return
 }
