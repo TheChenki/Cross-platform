@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"Lib","c":"MyClass","l":"acrostic(String[])","url":"acrostic(java.lang.String[])"},{"p":"Lib","c":"MyClass","l":"MyClass()","url":"%3Cinit%3E()"}]
