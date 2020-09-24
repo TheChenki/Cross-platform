@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SignalLib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/SignalLib_jar/SignalLib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

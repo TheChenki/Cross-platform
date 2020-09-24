@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="SignalLib:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SignalLib_jar</output-path>
+    <root id="archive" name="SignalLib.jar">
+      <element id="module-output" name="SignalLib" />
+    </root>
+  </artifact>
+</component>
