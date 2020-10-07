@@ -35,16 +35,25 @@ public class Program
 
         SignalCharacteristicsCalculator signalCalculator = new SignalCharacteristicsCalculator();
 
-        Integer dynamicRange = signalCalculator.calculateDynamicRange(numbers);
-        Integer signalEnergy = signalCalculator.calculateSignalEnergy(numbers);
-        Float avgSignalStrength = signalCalculator.calculateAverageSignalStrength(numbers);
-        Float avgSignalSamplesValue = signalCalculator.calculateAverageSignalSamplesValue(numbers);
-        Float signalSampleValuesVariance = signalCalculator.calculateSignalSampleValuesVariance(numbers);
+        int dynamicRange = signalCalculator.calculateDynamicRange(numbers);
+        int signalEnergy = signalCalculator.calculateSignalEnergy(numbers);
+        float avgSignalStrength = signalCalculator.calculateAverageSignalStrength(numbers);
+        float avgSignalSamplesValue = signalCalculator.calculateAverageSignalSamplesValue(numbers);
+        float signalSampleValuesVariance = signalCalculator.calculateSignalSampleValuesVariance(numbers);
+        float correlationInterval = signalCalculator.calculateCorrelationInterval(numbers);
 
-        System.out.println(dynamicRange);
-        System.out.println(signalEnergy);
-        System.out.println(avgSignalStrength);
-        System.out.println(avgSignalSamplesValue);
-        System.out.println(signalSampleValuesVariance);
+        System.out.println("Динамический диапазон: " + dynamicRange);
+        System.out.println("Энергия: " + signalEnergy);
+        System.out.println("Средняя мощность: " + avgSignalStrength);
+        System.out.println("Среднее значение: " + avgSignalSamplesValue);
+        System.out.println("Дисперсия: " + signalSampleValuesVariance);
+        System.out.println("Интервал корреляции: " + correlationInterval);
+
+        for(int tau = -10; tau <= 10; tau++)
+        {
+            float result = signalCalculator.calculateAutocorrelation(numbers,tau);
+            System.out.println("Автокорреляция(" + tau + "): " + result);
+        }
+
     }
 }

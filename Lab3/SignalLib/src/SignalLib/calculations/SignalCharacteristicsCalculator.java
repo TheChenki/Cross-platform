@@ -5,17 +5,17 @@ import java.util.List;
 
 public class SignalCharacteristicsCalculator
 {
-    public Integer calculateDynamicRange(List<Integer> numbers)
+    public int calculateDynamicRange(List<Integer> numbers)
     {
-        Integer min = Collections.min(numbers);
-        Integer max = Collections.max(numbers);
+        int min = Collections.min(numbers);
+        int max = Collections.max(numbers);
 
         return max - min;
     }
 
-    public Integer calculateSignalEnergy(List<Integer> numbers)
+    public int calculateSignalEnergy(List<Integer> numbers)
     {
-        Integer result = 0;
+        int result = 0;
 
         for (Integer i : numbers)
         {
@@ -25,9 +25,9 @@ public class SignalCharacteristicsCalculator
         return result;
     }
 
-    public Float calculateAverageSignalStrength(List<Integer> numbers)
+    public float calculateAverageSignalStrength(List<Integer> numbers)
     {
-        Float result = 0f;
+        float result = 0f;
 
         for (Integer i : numbers)
         {
@@ -37,9 +37,9 @@ public class SignalCharacteristicsCalculator
         return result / numbers.size();
     }
 
-    public Float calculateAverageSignalSamplesValue(List<Integer> numbers)
+    public float calculateAverageSignalSamplesValue(List<Integer> numbers)
     {
-        Float result = 0f;
+        float result = 0f;
 
         for (Integer i : numbers)
         {
@@ -49,10 +49,10 @@ public class SignalCharacteristicsCalculator
         return result / numbers.size();
     }
 
-    public Float calculateSignalSampleValuesVariance(List<Integer> numbers)
+    public float calculateSignalSampleValuesVariance(List<Integer> numbers)
     {
-        Float m = calculateAverageSignalSamplesValue(numbers);
-        Float result = 0f;
+        float m = calculateAverageSignalSamplesValue(numbers);
+        float result = 0f;
 
         for (Integer i : numbers)
         {
@@ -60,5 +60,32 @@ public class SignalCharacteristicsCalculator
         }
 
         return result / numbers.size();
+    }
+
+    public float calculateAutocorrelation(List<Integer> numbers, int tau)
+    {
+        float m = calculateAverageSignalSamplesValue(numbers);
+        float result = 0f;
+
+        tau = (tau > 0) ? tau : -tau;
+
+        for(int i = 0; i < numbers.size() - tau; i++)
+        {
+            result += (numbers.get(i + tau) - m) * (numbers.get(i) - m);
+        }
+
+        return result / (numbers.size() - tau);
+    }
+
+    public float calculateCorrelationInterval(List<Integer> numbers)
+    {
+        float result = 0f;
+
+        for(int i = 0; i < numbers.size(); i++)
+        {
+            result += calculateAutocorrelation(numbers, i);
+        }
+
+        return result / calculateAutocorrelation(numbers, 0);
     }
 }
