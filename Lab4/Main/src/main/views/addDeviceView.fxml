@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.AddDeviceController">
+   <children>
+      <JFXButton layoutX="10.0" layoutY="72.0" buttonType="RAISED" ripplerFill="#1731f5" onAction="#addDevice" text="Добавить" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Label fx:id="label" layoutX="10.0" layoutY="14.0" text="Название:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="14.0" />
+      <JFXComboBox fx:id="deviceType" layoutX="85.0" layoutY="41.0" prefHeight="25.0" prefWidth="205.0" value="TV" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="10.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Lamp" />
+               <String fx:value="Hood"  />
+               <String fx:value="Boiler" />
+               <String fx:value="Fan"  />
+               <String fx:value="Fridge" />
+            </FXCollections>
+         </items>
+      </JFXComboBox>
+      <JFXTextField fx:id="deviceName" layoutX="137.0" layoutY="15.0" prefHeight="25.0" prefWidth="205.0" text="Новое устройство" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Label layoutX="10.0" layoutY="45.0" prefHeight="17.0" prefWidth="71.0" text="Устройство:" />
+   </children>
+</AnchorPane>

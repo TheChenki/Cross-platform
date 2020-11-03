@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="400" maxWidth="600" minHeight="400" minWidth="600" prefHeight="400" prefWidth="600" scaleShape="false" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.MainController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="300.0" />
+      <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="300.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+    <RowConstraints fillHeight="false" prefHeight="35.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <JFXListView fx:id="deviceList" prefHeight="300.0" prefWidth="279.0">
+         <GridPane.margin>
+            <Insets left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </JFXListView>
+       <HBox prefHeight="47.0" prefWidth="300.0" spacing="5.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+         <children>
+            <JFXButton onAction="#addDevice" prefHeight="25.0" prefWidth="95.0" ripplerFill="#1731f5" text="Add" />
+             <JFXButton onAction="#deleteDevice" prefHeight="25.0" prefWidth="95.0" ripplerFill="#1731f5" text="Delete" />
+            <JFXButton onAction="#configDevice" prefHeight="25.0" prefWidth="95.0" ripplerFill="#1731f5" text="Config" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></HBox>
+      <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowSpan="2" />
+   </children>
+</GridPane>

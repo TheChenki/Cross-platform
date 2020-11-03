@@ -1,6 +1,7 @@
 *.docx
 *.doc
 *.pdf
+**/.idea/
 
 # Compiled class file
 *.class

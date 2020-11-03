@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefWidth="300.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.HoodConfigController">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+    <children>
+          <JFXCheckBox fx:id="airing" prefHeight="30.0" prefWidth="110.0" text="Проветривание" />
+        <HBox spacing="5.0">
+            <children>
+              <Label prefHeight="30.0" prefWidth="134.0" text="Период проветривания:" />
+                <JFXTimePicker fx:id="airingPeriod" prefHeight="30.0" prefWidth="125.0" />
+            </children>
+        </HBox>
+          <JFXCheckBox fx:id="light" prefHeight="30.0" prefWidth="110.0" text="Свет" />
+      <Label text="Мощность:" />
+      <JFXSlider fx:id="power" max="100" min="0" />
+      <Label text="Наклон:" />
+      <JFXSlider fx:id="tilt" max="30" min="0" />
+    </children>
+</VBox>
