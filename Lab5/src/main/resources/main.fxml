@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+  <tabs>
+    <Tab text="Люди">
+      <content>
+          <fx:include fx:id="people" source="people.fxml"  />
+      </content>
+    </Tab>
+    <Tab text="Автомобили">
+      <content>
+          <fx:include fx:id="cars" source="cars.fxml" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
